@@ -124,7 +124,19 @@ public:
     }
     
     void ClearCanvasHandler(bool & val){
-        cout << val << endl;
+        
+        for (int j = 0; j < points.size(); j++) {
+            
+            
+            for(int i = 1; i < points[j].size(); i++){
+                points[j].clear();
+            }
+            
+        }
+        
+        points.clear();
+
+        
     }
 };
 
